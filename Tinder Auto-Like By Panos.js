@@ -12,6 +12,7 @@
  * @grant none
  * ==/UserScript==
  */
+
 function likeByButton() {
 	setInterval(function () {
 		var buttons = document.getElementsByTagName("button");
