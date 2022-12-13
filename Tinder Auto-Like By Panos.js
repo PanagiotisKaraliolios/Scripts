@@ -3,7 +3,7 @@
 // @version  1
 // @grant    none
 // @match    *://tinder.com/*
-// @description like anynone in second
+// @description like anynone in seconds
 // ==/UserScript==
 function likeByButton() {
 	setInterval(function () {
