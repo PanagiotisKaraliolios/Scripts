@@ -1,10 +1,17 @@
-// ==UserScript==
-// @name     Tinder Auto-Like By Panos
-// @version  1
-// @grant    none
-// @match    *://tinder.com/*
-// @description like anynone in seconds
-// ==/UserScript==
+/**
+ * ==UserScript==
+ * @name likeByButton
+ * @description like anynone in seconds
+ * @version 1
+ * @author Panos
+ * @license MIT
+ * @source
+ * @updateURL
+ * @downloadURL
+ * @match *://tinder.com/*
+ * @grant none
+ * ==/UserScript==
+ */
 function likeByButton() {
 	setInterval(function () {
 		var buttons = document.getElementsByTagName("button");
