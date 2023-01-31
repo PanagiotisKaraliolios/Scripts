@@ -1,19 +1,18 @@
-/**
- * ==UserScript==
- * @name likeByButton
- * @description like anynone in seconds
- * @version 1
- * @author Panos
- * @license MIT
- * @source
- * @updateURL
- * @downloadURL
- * @match *://tinder.com/*
- * @grant none
- * ==/UserScript==
- */
+// ==UserScript==
+// @name         Tinder Auto-like By Panos
+// @namespace    http://tampermonkey.net/
+// @version      1.0
+// @description  Simple script to auto like users every 4 seconds
+// @author       You
+// @match        https://tinder.com/app/*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=tinder.com
+// @grant        none
+// ==/UserScript==
 
-function likeByButton() {
+(function () {
+	"use strict";
+
+	// Your code here...
 	setInterval(function () {
 		var buttons = document.getElementsByTagName("button");
 		var button;
@@ -31,7 +30,5 @@ function likeByButton() {
 		} else {
 			console.log("There is no like button");
 		}
-	}, 3000);
-}
-
-likeByButton();
+	}, 4000);
+})().catch(console.error);
